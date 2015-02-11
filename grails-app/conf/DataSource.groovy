@@ -18,7 +18,10 @@ hibernate {
 environments {
     development {
         dataSource {
-            url = "jdbc:h2:database/devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            url = "jdbc:mysql://localhost/migration-test"
+            username = "root"
+            password = "100500"
+            driverClassName = "com.mysql.jdbc.Driver"
         }
     }
     test {
