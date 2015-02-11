@@ -9,6 +9,7 @@ databaseChangeLog = {
 	include file: 'v0.3.groovy'
 
     include file: 'add-beer.groovy'
+    include file: 'beer-v2.groovy'
 
 //    include file: 'test.groovy'
 }

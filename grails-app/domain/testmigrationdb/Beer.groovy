@@ -1,7 +1,10 @@
 package testmigrationdb
 
 class Beer {
-    enum Style { GERMAN_ALE, GERMAN_LAGER, BRITISH_ALE, BRITISH_LAGER, AMERICAN_ALE, AMERICAN_LAGER, OTHER }
+    enum Type { ALE, LAGER }
+    enum Origin { GERMANY, BRITAIN, USA, OTHER }
+
     String name
-    Style style
+    Type type
+    Origin origin
 }
