@@ -9,10 +9,7 @@ databaseChangeLog = {
 
         grailsChange {
             change {
-                Post.all.each { post ->
-                    post.dateCreated = new Date(101, 7, 15)
-                    post.save(failOnError: true, flush: true)
-                }
+                sql.execute("UPDATE post SET date_created = NOW()")
             }
             rollback {
             }
