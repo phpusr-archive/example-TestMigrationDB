@@ -1,5 +1,8 @@
 package testmigrationdb
 
+/**
+ * Пример: http://wpgreenway.com/posts/grails-db-migration-tutorial/
+ */
 class Post {
 
     String title
